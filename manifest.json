@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Panic Mode",
+  "version": "1.0.0",
+  "description": "단축키로 업무 화면을 표시하고 기존 탭을 음소거합니다.",
+  "permissions": ["storage", "tabs"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "Panic Mode" },
+  "commands": { "toggle-panic": { "suggested_key": { "default": "Ctrl+Shift+5" }, "description": "위장 화면 켜기 / 복구" } }
+}

@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Panic Mode</title><link rel="stylesheet" href="popup.css"><script src="popup.js" defer></script></head>
+<body>
+<header><div class="mark">P</div><div><h1>Panic Mode</h1><p>필요할 때, 바로 업무 화면으로.</p></div></header>
+<main><div class="section-title"><span>위장 화면</span><small>다음 실행부터 적용</small></div>
+<div class="options">
+<label><input type="radio" name="disguise" value="spreadsheet"><span class="option"><span class="option-icon sheet">▦</span><span><strong>스프레드시트</strong><small>익숙한 업무용 시트</small></span><span class="check">✓</span></span></label>
+<label><input type="radio" name="disguise" value="code"><span class="option"><span class="option-icon code">&lt;/&gt;</span><span><strong>코드 에디터</strong><small>다크 테마 편집기</small></span><span class="check">✓</span></span></label>
+<label><input type="radio" name="disguise" value="ios"><span class="option"><span class="option-icon ios">●</span><span><strong>iOS 업데이트</strong><small>검은 배경의 업데이트 화면</small></span><span class="check">✓</span></span></label>
+<label><input type="radio" name="disguise" value="windows"><span class="option"><span class="option-icon windows">⊞</span><span><strong>Windows 업데이트</strong><small>파란 배경의 업데이트 화면</small></span><span class="check">✓</span></span></label>
+</div>
+<button id="toggle" type="button">위장 화면 켜기 <span>↗</span></button><p id="status" class="status" role="status"></p>
+<div class="shortcut"><div><strong>빠른 실행</strong><small>다시 누르면 원래 화면으로 돌아갑니다</small></div><kbd id="shortcut">Ctrl + Shift + 5</kbd></div>
+<button id="shortcuts" class="link" type="button">단축키 변경하기 ↗</button></main>
+<footer><span class="dot"></span> 실행 중인 탭을 자동으로 음소거합니다</footer></body></html>
